@@ -1,15 +1,17 @@
+function waterSection(sectionValue, timeValue) {
+    'use strict';
+    var b = sectionValue * timeValue;
+    return b;
+    //here we start watering
+}
+
+function startProgram(programNo) {
+    'use strict';
+    alert("Chosen program " + programNo  + "starting");
+}
+
 $(document).ready(function () {
     'use strict';
-
-    function waterSection(sectionValue, timeValue) {
-        var b = sectionValue * timeValue;
-        return b;
-        //here we start watering
-    }
-
-    function startProgram(programNo) {
-        alert("Chosen program " + programNo  + "starting");
-    }
 
     //we add click listeners on buttons specified by id
     $('#waterSection').click(function(){
