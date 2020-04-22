@@ -9,26 +9,29 @@
 <body>
 <h2>Hunter hack</h2>
     <h4>Select section</h4>
-    <p> 
-        <label><input type="radio" name="secnum" value="1">Section 1</label> 
-        <label><input type="radio" name="secnum" value="2">Section 2</label>
-		<label><input type="radio" name="secnum" value="3">Section 3</label> 
-        <label><input type="radio" name="secnum" value="4">Section 4</label>
+     <p>
+        <label><input type="radio" name="secnum" value=1>Section 1</label> 
+        <label><input type="radio" name="secnum" value=2>Section 2</label>
+		<label><input type="radio" name="secnum" value=3>Section 3</label> 
+        <label><input type="radio" name="secnum" value=4>Section 4</label>
     </p>
-	 <p> 
-        <label><input type="radio" name="time" value="15" checked>15 minutes</label> 
-        <label><input type="radio" name="time" value="30">30 minutes</label>
-		<label><input type="radio" name="time" value="45">45 minutes</label> 
-        <label><input type="radio" name="time" value="60">1 hour</label>
+	 <p>
+        <label><input type="radio" name="timeval" value=15 checked>15 minutes</label> 
+        <label><input type="radio" name="timeval" value=30>30 minutes</label>
+		<label><input type="radio" name="timeval" value=45>45 minutes</label> 
+        <label><input type="radio" name="timeval" value=60>1 hour</label>
+    </p>  
+   <p>
+    <button class="button-primary" id="waterSection">Start Watering now!</button>
+    </p><p>
+    <button class="button-primary" id="kill-button">Stop All</button>
     </p>
-    <p><input type="button" name="start" value="Start Watering now!"></p>
-	<button onclick="StopAll" name="stopAll">Stop All</button>
 <h4> or you can start program </h4>
-<p>
+    <p>
 		<label><input type="radio" name="programNo" value=1>Program 1</label> 
         <label><input type="radio" name="programNo" value=2>Program 2</label>
 		<label><input type="radio" name="programNo" value=3>Program 3</label> 
-		<p></p>
+		</p>
 			<button onclick="StartProgram(programNo)">Start Chosen Program</button>
 </body>
 </html>                            
