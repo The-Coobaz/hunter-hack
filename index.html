@@ -3,36 +3,39 @@
 <head>
 <meta charset="utf-8">
 <title>jQuery Get Selected Radio Button Value</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="buttons.css">
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="buttons.js"></script>
 </head> 
 <body>
     <h1>Hunter hack</h1>
-    <h2>Select section</h2>
-    <p>
-        <label><input type="radio" name="secnum" value=1 checked>Section 1</label> 
-        <label><input type="radio" name="secnum" value=2>Section 2</label>
-		<label><input type="radio" name="secnum" value=3>Section 3</label> 
-        <label><input type="radio" name="secnum" value=4>Section 4</label>
+    <h4>Select section</h4>
+    <p><div class="switch-field">
+    <input type="radio"  name="secnum"  value=1  id="rad1"><label for='rad1'>Section 1</label>     
+    <input type="radio"  name="secnum"  value=2  id="rad2"><label for='rad2'>Section 2</label>        
+    <input type="radio"  name="secnum"  value=3  id="rad3"><label for='rad3'>Section 3</label>        
+    <input type="radio"  name="secnum"  value=4  id="rad4"><label for='rad4'>Drip line</label>        
+    </div>
+    </p>
+     <h4>Select time</h4>
+    <p><div class="switch-field">
+    <input type="radio"  name="timeval"  value=15  id="rad5" checked><label for='rad5'>15 minutes</label>     
+    <input type="radio"  name="timeval"  value=30  id="rad6"><label for='rad6'>30 minutes</label>        
+    <input type="radio"  name="timeval"  value=45  id="rad7"><label for='rad7'>45 minutes</label>        
+    <input type="radio"  name="timeval"  value=60  id="rad8"><label for='rad8'>1 hour</label>        
+    </div>
     </p>
     <p>
-        <label><input type="radio" name="timeval" value=15 checked>15 minutes</label> 
-        <label><input type="radio" name="timeval" value=30>30 minutes</label>
-		<label><input type="radio" name="timeval" value=45>45 minutes</label> 
-        <label><input type="radio" name="timeval" value=60>1 hour</label>
-    </p>  
-    <p>
-        <button class="button-primary" id="waterSection">Start Watering now!</button>
+        <button class="btn btn-secondary" id="waterSection">Start Watering now!</button>
     </p>
     <p>
-        <button class="button-primary" id="kill-button">Stop All</button>
+        <button class="btn btn-danger " id="kill-button">Stop All</button>
     </p>
-    <h2> or you can start program </h2>
-    <p>
-		<label><input type="radio" name="programNo" value=1>Program 1</label> 
-        <label><input type="radio" name="programNo" value=2>Program 2</label>
-		<label><input type="radio" name="programNo" value=3>Program 3</label> 
-    </p>
-    <button class="button-primary" id="startProgram">Start Chosen Program</button>
+    <h4> or you can start program </h4>
+    <p><div class="switch-field">
+    <input type="radio"  name="programNo"  value=1  id="rad9"><label for='rad9'>Program 1</label> 
+    <input type="radio"  name="programNo"  value=2  id="rad10"><label for='rad10'>Program 2</label>       <input type="radio"  name="programNo"  value=3  id="rad11"><label for='rad11'>Program 3</label>         </div>
+    <button class="btn btn-primary" id="startProgram">Start Chosen Program</button>
 </body>
 </html>
