@@ -1,14 +1,20 @@
 function waterSection(radioValue, timeValue) {
     'use strict';
-    var b = radioValue * timeValue;
-    return b;
+      var sturl="waterSection/"
+      var sturl2="/time/"
+   var url=sturl+radioValue+sturl2+timeValue;
+       $.ajax(url, { cache: false });
     //here we start watering
 }
 
 function startProgram(programNo) {
     'use strict';
     alert("Chosen program " + programNo  + "starting");
-}
+   var sturl="startProgram/"
+   var url=sturl+programNo;
+       $.ajax(url, { cache: false });
+    
+ }
 
 $(document).ready(function () {
     'use strict';
@@ -31,5 +37,8 @@ $(document).ready(function () {
 
     $('#kill-button').click(function () {
         alert("Stopping all");
+          var sturl="stopAll/"
+   var url=sturl;
+       $.ajax(url, { cache: false });
     });
 });
