@@ -4,8 +4,8 @@
 #include <ESP8266WebServer.h>
 
 
-const String ssid = "TurboKombi";
-const String password = "Jakuboslaw";
+const String ssid = "SSID";
+const String password = "PASS";
 const String REQ_STRING_KEY = "req";
 
 ESP8266WebServer webServer(80);
