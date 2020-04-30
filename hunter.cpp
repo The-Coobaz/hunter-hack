@@ -184,6 +184,7 @@ HunterBitfield(buffer, 109, zone - 1, 4);
 
 // Write the bits out of the bus
 HunterWrite(buffer, true);
+delay(15);
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -193,10 +194,11 @@ HunterWrite(buffer, true);
 /////////////////////////////////////////////////////////////////////////////
 void HunterStop(byte zone)
 {
-Serial.print("HunterStop zone ");
+Serial.println("HunterStop zone ");
 Serial.print(zone);
 Serial.print(": ");
 HunterStart(zone, 0);
+delay(15);
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -207,6 +209,8 @@ HunterStart(zone, 0);
 void HunterProgram(byte num)
 {
 // Start with a basic program frame
+Serial.print("HunterProgram start: ");
+Serial.print(num);
 vector<byte> buffer = {0xff, 0x40, 0x03, 0x96, 0x09 ,0xbd ,0x7f};
 
 if (num < 1 || num > 4)
