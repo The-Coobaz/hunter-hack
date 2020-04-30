@@ -57,7 +57,7 @@ void handleRequest() {
 
 void stopAll() {
   Serial.println("Stopping all!");
-  for (int i=1; i<5; i++) {
+  for (int i=1; i<4; i++) {
     Serial.println("stopping section"+i);
     delay(5);
     HunterStop(i);
