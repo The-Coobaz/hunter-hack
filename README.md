@@ -15,6 +15,13 @@ The shield is no longer available, but protocol was [reverse-engineered] by blog
 
 Protocol implementation can be found in [hunter.h] and [hunter.cpp] files that can be also found in [OpenSprinkler-Firmware-Hunter] project.
 
+## API
+You can drive this device by home-assistant and curl command.
+just run command:
+curl http://LOCALIP/section/1/time/15 - runs section 1 for 15 minutes
+curl http://LOCALIP/program/1' - runs program 1
+curl http://LOCALIP/StopAll - you know what it does ;)
+where LOCALIP is your ESP8266 device IP number
 ## Screenshot  
 [![screenshot](./screenshot.png)](./screenshot.png) 
 
